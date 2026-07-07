@@ -1,6 +1,5 @@
 import streamlit as st
-#from ecocoach import analizar_alimentos*/
-import ecocoach as eco
+from ecocoach import analizar_alimentos
 
 st.set_page_config(
     page_title="EcoCoach",
@@ -161,7 +160,7 @@ if prompt:
 
             try:
 
-                respuesta=eco.analizar_alimentos(prompt)
+                respuesta=analizar_alimentos(prompt)
 
             except Exception as e:
 
